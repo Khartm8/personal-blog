@@ -1,0 +1,14 @@
+{
+  "name": "personal-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "Khartm8",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

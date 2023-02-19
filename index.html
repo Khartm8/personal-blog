@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <h1 class="header__logo logo">
+                    Jessica Davidson
+                </h1>
+                <nav class="header__nav nav">
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Writings</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Awards</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Sponsor</a>
+                        </li>
+                    </ul>
+                    <form class="nav__form">
+                        <div class="nav__input nav-input">
+                            <input type="email" name="email" placeholder="john@example.com" class="nav-input__field">
+                            <img src="./assets/mail-icon.svg" alt="mail-icon" class="nav-input__icon">
+                        </div>
+                        <button class="nav__btn btn">
+                            Create new post
+                        </button>
+                    </form>
+                </nav>
+                <button class="nav__toggle menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__wrapper">
+
+                <!-- Left sidebar -->
+
+                <aside class="sidebar">
+                    <ul class="categories">
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">
+                                <img src="./assets/saas.svg" alt="SaaS" class="categories__icon">
+                                SaaS
+                            </a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">
+                                <img src="./assets/design.svg" alt="Design" class="categories__icon">
+                                Design
+                            </a>
+                        </li>
+                        <li class="categories__item">
+                            <a href="#" class="categories__link">
+                                <img src="./assets/development.svg" alt="Development" class="categories__icon">
+                                Development
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="sidebar__separator"></div>
+
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./assets/behance.svg" alt="Behance" class="social__icon">
+                                Behance
+                                <img src="./assets/link-icon.svg" alt="Link icon" class="social__link-icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./assets/twitter.svg" alt="Twitter" class="social__icon">
+                                Twitter
+                                <img src="./assets/link-icon.svg" alt="Link icon" class="social__link-icon">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <img src="./assets/linkedin.svg" alt="LinkedIn" class="social__icon">
+                                LinkedIn
+                                <img src="./assets/link-icon.svg" alt="Link icon" class="social__link-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Posts -->
+
+                <section class="posts">
+                    <div class="posts__wrapper">
+                        <div class="posts__item post">
+                            <div class="post__top">
+                                <div class="post__text">
+                                    <h2 class="post__title">
+                                        Understanding the reasons behind a successful startup
+                                    </h2>
+                                    <p class="post__subtitle">
+                                        Going over the reasons why most successful startups  
+                                        should understand the basics of business instead of just
+                                         launching into the void without any market study.
+                                    </p>
+                                </div>
+                                <img src="./assets/post-image.png" alt="Post image" class="post__image">
+                            </div>
+                            <div class="post__bottom">
+                                <div class="post__author author">
+                                    <img src="./assets/jess.png" alt="Jessica Davidson" class="author__avatar">
+                                    <p class="author__name">Jessica Davidson</p>
+                                    <p class="post__ago">∙ 12 hours ago</p>
+                                </div>
+                                <div class="post__date">
+                                    23/11/2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="posts__item ad">
+                            <div class="ad__info">
+                                <h2 class="ad__title">
+                                    Announcing a new platform, Codewell.
+                                </h2>
+                                <p class="ad__subtitle">
+                                    Codewell is a platform that helps you improve your frontend skills by practicing on real world design templates.
+                                </p>
+                                <div class="ad__actions">
+                                    <button class="ad__btn btn">
+                                        Visit Codewell →
+                                    </button>
+                                    <button class="ad__btn learn-btn">
+                                        Learn more
+                                    </button>
+                                </div>
+                            </div>
+                            <img src="./assets/ad-image.svg" alt="Illustration" class="ad__image">
+                        </div>
+                        <div class="posts__item post">
+                            <div class="post__top">
+                                <div class="post__text">
+                                    <h2 class="post__title">
+                                        I quit my job last year to pursue freelancing full time.
+                                    </h2>
+                                    <p class="post__subtitle">
+                                        Quitting my full time job was not an easy decision to make, but it was one that has changed my life 180 degrees. Here’s
+                                        my story from A to Z.
+                                    </p>
+                                </div>
+                                <img src="./assets/post-image-1.png" alt="Post image" class="post__image">
+                            </div>
+                            <div class="post__bottom">
+                                <div class="post__author author">
+                                    <img src="./assets/jess.png" alt="Jessica Davidson" class="author__avatar">
+                                    <p class="author__name">Jessica Davidson</p>
+                                    <p class="post__ago">∙ 12 hours ago</p>
+                                </div>
+                                <div class="post__date">
+                                    20/11/2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts__pagination pagination">
+                        <button class="pagination__btn pagination__btn_prev">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.71 1.21002C7.1 1.60002 7.1 2.23002 6.71 2.62002L2.83 6.50002L6.71 10.38C7.1 10.77 7.1 11.4 6.71 11.79C6.32 12.18 5.69 12.18 5.3 11.79L0.710002 7.20002C0.320003 6.81002 0.320003 6.18002 0.710002 5.79002L5.3 1.20002C5.68 0.820022 6.32 0.820022 6.71 1.21002Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <div class="pagination__items">
+                            <a href="#" class="pagination__item pagination__link">1</a>
+                            <a href="#" class="pagination__item pagination__link pagination__link_active">2</a>
+                            <a href="#" class="pagination__item pagination__link">3</a>
+                            <div class="pagination__item">...</div>
+                            <a href="#" class="pagination__item pagination__link">22</a>
+                        </div>
+                        <button class="pagination__btn pagination__btn_next">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.29 1.21002C0.899998 1.60002 0.899998 2.23002 1.29 2.62002L5.17 6.50002L1.29 10.38C0.899998 10.77 0.899998 11.4 1.29 11.79C1.68 12.18 2.31 12.18 2.7 11.79L7.29 7.20002C7.68 6.81002 7.68 6.18002 7.29 5.79002L2.7 1.20002C2.32 0.820022 1.68 0.820022 1.29 1.21002Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Right sidebar -->
+
+                <aside class="sidebar right-sidebar">
+                    <form class="search-posts right-sidebar__item">
+                        <input type="text" placeholder="Search posts" class="search-posts__input">
+                        <img src="./assets/keyboard-shortcut.svg" alt="Search icon" class="search-posts__icon">
+                    </form>
+                    <div class="projects right-sidebar__item">
+                        <h3 class="projects__title">
+                            Projects
+                        </h3>
+                        <div class="sidebar__separator"></div>
+                        <ul class="projects__items">
+                            <li class="projects__item">
+                                <a href="#" class="projects__link">Codewell</a>
+                            </li>
+                            <li class="projects__item">
+                                <a href="#" class="projects__link">Spense</a>
+                            </li>
+                            <li class="projects__item">
+                                <a href="#" class="projects__link">YelpCamp</a>
+                            </li>
+                            <li class="projects__item">
+                                <a href="#" class="projects__link">Google Algorithms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Subscription -->
+
+    <section class="subscr">
+        <div class="wrapper">
+            <div class="subscr__wrapper">
+                <div class="subscr__info">
+                    <h2 class="subscr__title">
+                        Want to stay up to date with my project Codewell?
+                    </h2>
+                    <p class="subscr__subtitle">
+                        Receive non-frequent emails about my startup Codewell, you can unsubscribe any time.
+                    </p>
+                    <form class="subscr__form">
+                        <input type="text" placeholder="john@example.com" class="subscr__input">
+                    </form>
+                </div>
+                <img src="./assets/subscr-image.png" alt="Subscription image" class="subscr__image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <h2 class="footer__logo logo">
+                    Jessica Davidson
+                </h2>
+                <p class="footer__copyright">
+                    © 2021 Jessica Davidson, All Rights Reserved
+                </p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">LinkedIn</a>
+                    <a href="#" class="footer__social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
